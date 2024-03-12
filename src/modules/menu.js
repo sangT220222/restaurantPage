@@ -1,4 +1,4 @@
-
+import momo from "../assets/momo.jpeg";
 
 const starters = [
     {
@@ -17,6 +17,13 @@ const starters = [
         price: '6.89'
     },
   ];
+
+const momo_img = () => {
+    const pic = new Image();
+    pic.src = momo;
+  
+    return pic;
+}
 
 const menu_tab = () => {
     const content_div = document.getElementById("core");
@@ -38,6 +45,10 @@ const menu_tab = () => {
         section.appendChild(name);
         section.appendChild(description);
         section.appendChild(price);
+
+        if (starter.name.toUpperCase() === 'MOMO (6 PIECES)'){
+            section.appendChild(momo_img());
+        }
 
         content_div.appendChild(section);
     })
