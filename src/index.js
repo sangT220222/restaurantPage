@@ -1,6 +1,6 @@
-import { load_nav } from "./loadNav";
-import { menu_tab } from "./menu";
-import { home_content } from "./home";
+import { load_nav } from "./modules/loadNav";
+import { menu_tab } from "./modules/menu";
+import { home_content } from "./modules/home";
 
 const content_div = document.getElementById('content');
 
