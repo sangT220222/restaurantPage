@@ -19,9 +19,10 @@ const starters = [
   ];
 
 const menu_tab = () => {
-    const content_div = document.querySelector(".content");
-    
-    starters.forEach = (starter =>{
+    const content_div = document.getElementById("core");
+    content_div.innerHTML = '';
+
+    starters.forEach (starter =>{
         const section = document.createElement('section');
         section.id = starter.name;
 
@@ -39,8 +40,7 @@ const menu_tab = () => {
         section.appendChild(price);
 
         content_div.appendChild(section);
-    })  
-
+    })
 }
 
 export {menu_tab} 

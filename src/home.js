@@ -66,7 +66,7 @@ const home_content = () => {
         }
         
         content_div.appendChild(section_element);
-        })
+    })
 }
 
 export {home_content}
