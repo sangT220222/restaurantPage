@@ -1,8 +1,8 @@
 const sections = [
     {
       id: 'home-1',
-      title: 'Welcome to [Restaurant Name] - Where Flavor Meets Traditions',
-      content:['[Restaurant Name] invites you to indulge in an unforgettable culinary experience that celebrates the essence of [cuisine type or specialty]. Nestled in the heart of [City or Location], our restaurant offers a warm and inviting atmosphere where every dish tells a story and every bite ignites your senses.']
+      title: 'Welcome to Himalayan Spice Delight- Where Flavor Meets Traditions',
+      content:['Himalayan Spice Delightinvites you to indulge in an unforgettable culinary experience that celebrates the essence of Nepalese cuisine. Nestled in the heart of Gazab, our restaurant offers a warm and inviting atmosphere where every dish tells a story and every bite ignites your senses.']
     },
     {
         id: 'home-2',
@@ -22,7 +22,7 @@ const sections = [
     },
     {
         id: 'home-4',
-        title: 'Indulge your palate and satisfy your cravings at [Restaurant Name].',
+        title: 'Indulge your palate and satisfy your cravings at Himalayan Spice Delight.',
         content: []
     }
   ];

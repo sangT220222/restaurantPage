@@ -1,4 +1,6 @@
 import momo from "../assets/momo.jpeg";
+import sukuti from "../assets/sukuti_chatpate.jpeg";
+import aloo from "../assets/aloo.jpeg";
 
 const starters = [
     {
@@ -7,20 +9,34 @@ const starters = [
       price: '£7.69'
     },
     {
-        name: 'Sukuti Chiura',
-        description: 'Dried meat (sukuti) and beaten rice (chiura), seasoned with spices ',
+        name: 'Sukuti Chatput',
+        description: 'Dried meat mixed with a variety of spices and seasonings.',
         price: '£8.21'
     },
     {
         name: 'Aloo Dam',
-        title: 'Spicy and flavorful potatoes cooked in a rich aromatic gravy, with tomatoes, onions, ginger, garlic, and a blend of Nepalese spices.',
-        price: '6.89'
+        description: 'Spicy and flavorful potatoes cooked in a rich aromatic gravy, with tomatoes, onions, ginger, garlic, and a blend of Nepalese spices.',
+        price: '£6.89'
     },
   ];
 
 const momo_img = () => {
     const pic = new Image();
     pic.src = momo;
+  
+    return pic;
+}
+
+const sukuti_img = () => {
+    const pic = new Image();
+    pic.src = sukuti;
+  
+    return pic;
+}
+
+const aloo_img = () => {
+    const pic = new Image();
+    pic.src = aloo;
   
     return pic;
 }
@@ -39,16 +55,23 @@ const menu_tab = () => {
         const description = document.createElement('p');
         description.textContent = starter.description;
 
-        const price = document.createElement('span');
+        const price = document.createElement('p');
         price.textContent = starter.price;
 
-        section.appendChild(name);
-        section.appendChild(description);
-        section.appendChild(price);
+        section.appendChild(name);        
 
         if (starter.name.toUpperCase() === 'MOMO (6 PIECES)'){
             section.appendChild(momo_img());
         }
+        else if (starter.name.toUpperCase() === 'SUKUTI CHATPUT'){
+            section.appendChild(sukuti_img());
+        }
+        else {
+            section.appendChild(aloo_img());
+        }
+        
+        section.appendChild(description);
+        section.appendChild(price);
 
         content_div.appendChild(section);
     })
