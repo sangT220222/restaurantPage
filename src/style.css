@@ -1,11 +1,15 @@
 /* Body styles */
 body {
-    font-family: 'Roboto', sans-serif; /* Use Roboto font for modern look */
+    font-family: 'Arial, sans-serif';
     background-color: #f8f9fa; /* Light gray background */
     color: #333; /* Dark gray text */
     margin: 0;
     padding: 0;
     text-align: center;
+    background-image: url('assets/background_img.jpeg');
+    background-size: cover;
+    color: #808080;
+    line-height: "1.6";
   }
   
   /* Header styles */

@@ -1,3 +1,4 @@
+
 const sections = [
     {
       id: 'home-1',
@@ -26,7 +27,7 @@ const sections = [
         content: []
     }
   ];
-   
+
 
 const home_content = () => {
     const content_div = document.getElementById('core');
