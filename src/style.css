@@ -1,21 +1,16 @@
 /* Body styles */
 body {
     font-family: 'Arial, sans-serif';
-    background-color: #f8f9fa; /* Light gray background */
-    color: #333; /* Dark gray text */
+    color: yellow; /* Dark gray text */
     margin: 0;
     padding: 0;
     text-align: center;
     background-image: url('assets/background_img.jpeg');
-    background-size: cover;
-    color: #808080;
     line-height: "1.6";
   }
   
   /* Header styles */
 header {
-    background-color: #007bff; /* Vibrant blue header */
-    color: #fff; /* White text */
     padding: 20px;
 }
 
@@ -24,29 +19,11 @@ header h1 {
     font-size: 36px;
 }
 
-/* Navigation styles */
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #ffffff; /* White background for navigation */
     padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-nav a {
-    color: #333; /* Dark gray text */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #007bff; /* Blue text on hover */
-}
-
-img {
-    width: 400px;
-    height: auto;
 }
 
 /* Main content styles */
@@ -56,29 +33,26 @@ main {
 
 /* Button styles */
 button {
-    background-color: #28a745; /* Green button */
-    color: #fff; /* White text */
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    color: white; /* Change text color to white */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 10px 20px; /* Add padding to the buttons */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    border-radius: 5px; /* Add rounded corners */
 }
 
 button:hover {
-background-color: #218838; /* Darker shade of green on hover */
+    color: #007bff; /* Blue text on hover */
+    background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background on hover */
+}
+
+/* Image styles */
+img {
+    width: 100%; /* Ensure image width spans the container */
+    height: auto; /* Maintain aspect ratio */
 }
 
 li {
     list-style: none;
 }
 
-/* Footer styles */
-footer {
-    background-color: #343a40; /* Dark background for footer */
-    color: #fff; /* White text */
-    text-align: center;
-    padding: 20px;
-}
-  
-  
