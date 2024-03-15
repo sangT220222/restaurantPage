@@ -2,4 +2,4 @@ The main learning application here is to practise using Webpack and bundling nec
 
 This mini project contains the bundle of JS,CSS,HTML and images files, using HTMLWebpackPlugin, css-loader, style-loader to proceed with the project.
 
-HTML elemnts were manifested by the usuage of DOM manipulation in JavaScript.
+HTML elements were manifested by the usuage of DOM manipulation in JavaScript.
